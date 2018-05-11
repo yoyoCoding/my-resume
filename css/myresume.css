@@ -1,0 +1,261 @@
+*{
+	box-sizing:border-box;
+}
+html,body{
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	font-size:14px;
+	color:#666;
+	font-family:"Microsoft YaHei","Times New Roman";
+	background-color: #ccc;
+}
+ul{
+	margin:0;
+	padding:0;
+}
+
+li{
+	display:block;
+	float: left;
+}
+
+a{
+	display: block;
+}
+
+span{
+	display:inline-block;
+}
+
+input[type='text']{
+	width:140px;
+	height:33px;
+	border:solid 1px #4E4E4D;
+	padding:0 5px;
+	outline:none;
+}
+
+.container{
+	width:795px;
+	min-height:100%;
+	height:auto;
+	background-color:#fff;
+}
+.container:after{
+	content:'';
+	height:0;
+	display:block;
+	visibility: hidden;
+	clear:both;
+}
+
+/*左侧栏*/
+.left-nav{
+	float:left;
+	width:33%;
+	height:100%;
+	/*height:auto;*/
+	padding:0 1em;
+	color:#fff;
+	background-color:#18293B;
+}
+
+.left-nav .portrait{
+	display: block;
+	position:relative;
+	width:84px;
+	height:84px;
+	margin:0 auto;
+	margin-top:2em;
+	margin-bottom: 3em;
+	border:solid 2px #EDEDED;
+	transform: rotate(45deg);
+	/*background-color: #fff;*/
+
+}
+.left-nav .portrait i{
+	position:absolute;
+	display: block;
+	width:70px;
+	height:4px;
+	background-color:#fff;
+	border-radius:3px;
+}
+.left-nav .portrait i.top{
+	top:-4px;
+	left:40px;
+}
+.left-nav .portrait i.bottom{
+	bottom:-4px;
+	right:40px;
+}
+.left-nav .portrait .img-box{
+	width:100%;
+	height:80px;
+	position: relative;
+	overflow:hidden;
+	background-color:#fff;
+	z-index:2;
+	/*transform: rotate(-45deg);*/
+}
+.left-nav .portrait img{
+	position:absolute;
+	top:-22px;
+	left:-60px;
+	/*width:100%;*/
+	height:115px;
+	z-index:1;
+	transform: rotate(-45deg);
+}
+.left-nav .info-item{
+	margin-bottom:4em;
+}
+
+/*基本信息/教育背景等提示头*/
+.title-tips{
+	font-size:15px;
+	margin-bottom:1em;
+}
+.title-tips:after{
+	content:'';
+	height:0;
+	display: block;
+	visibility:hidden;
+	clear:both;
+}
+.title-tips .icon{
+	font-size:12px;
+	width:20px;
+	height:20px;
+	float:left;
+	margin-right:5px;
+	vertical-align: bottom;
+	background-color:#447FA7;
+	text-align:center;
+	padding:1px 0;
+	transform: rotate(45deg);
+}
+.title-tips span.info,
+.title-tips span.work,
+.title-tips span.xm,
+.title-tips span.edu{
+	padding-top: 2px;
+	padding-left:2px;
+}
+.title-tips .icon i{
+	color:#fff;
+	background-color:initial;
+	transform: rotate(-45deg);
+}
+.title-tips .tips{
+	float:left;
+	font-weight: 700;
+	width:calc(100% - 25px);
+	padding-bottom:4px;
+	margin-top:-4px;
+	border-bottom:solid 1px #EDEDED;
+}
+.title-tips .tips span:after{
+	display: block;
+	position:relative;
+	content:'';
+	bottom:-6px;
+	border-bottom:solid 3px #EDEDED;
+}
+/*基本信息/教育背景等提示头 end*/
+
+.left-nav .info-item p{
+	color:#EDEDED;
+	font-size:0.5em;
+}
+.left-nav .info-item p .icon{
+	margin-right:0.5em;
+	display: inline-block;
+	width:16px;
+}
+.left-nav .description-item p{
+	line-height:1.6em;
+}
+
+
+/*头部*/
+header{
+	float:left;
+	width:67%;
+	padding-left:1.5em;
+	height:6em;
+	box-shadow: 0 2px 5px #ccc;
+}
+header p{
+	margin:0;
+}
+header p.name{
+	font-size:20px;
+	font-weight:700;
+	color:#447FA7;
+	margin-top:1.2em;
+	margin-bottom:0.1em
+}
+
+/*正文*/
+section{
+	float:left;
+	width:67%;
+	padding:1.5em;
+	margin-top:1em;
+	border-top:solid 2px #eee;
+}
+section .item{
+	margin-bottom:3em;
+}
+section .item:last-child{
+	margin-bottom:0;
+}
+section .title-tips .tips{
+	color:#447FA7;
+	border-color:#447FA7;
+}
+section .title-tips .tips span:after{
+	border-color:#447FA7;
+}
+section .info-box{
+	margin-bottom:2em;
+}
+section .info-box:last-child{
+	margin-bottom:0;
+}
+section .info-box p{
+	margin:0;
+	text-align:justify;
+}
+section .info-box .title{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom:0.5em;
+}
+section .info-box .date,
+section .info-box .location,
+section .info-box .job{
+	font-weight:700;
+}
+section .info-box .job{
+	/*float:right;*/
+}
+section .info-box i.icon{
+	font-size:0.5em;
+	margin-right:0.5em;
+	color:#c6c4c4;
+}
+section .info-box p{
+	overflow:hidden;
+}
+section .info-box p.tips{
+	margin-bottom:0.2em;
+}
+section .info-box p .descrip{
+	vertical-align:top;
+	width:calc(100% - 23px);
+}
+
