@@ -110,7 +110,7 @@ input[type='text']{
 	transform: rotate(-45deg);
 }
 .left-nav .info-item{
-	margin-bottom:4em;
+	margin-bottom:3.5em;
 }
 
 /*基本信息/教育背景等提示头*/
@@ -178,6 +178,45 @@ input[type='text']{
 .left-nav .description-item p{
 	line-height:1.6em;
 }
+.left-nav .info-item .skill-p{
+	margin-bottom:0.3em;
+}
+.left-nav .info-item .skill-p .skill-tips{
+	line-height:1.8em;
+}
+.left-nav .info-item .skill-p .skill-bar{
+	width:80%;
+	height:0.5em;
+	background-color:#90A2B0;
+	/* background-color:#EDEDED; */
+}
+.left-nav .info-item .skill-p .js-bar{
+	width:70%;
+}
+.left-nav .info-item .skill-p .jq-bar{
+	width:70%;
+}
+.left-nav .info-item .skill-p .bs-bar{
+	width:60%;
+}
+.left-nav .info-item .skill-p .php-bar{
+	width:65%;
+}
+.left-nav .info-item .skill-p .svn-bar{
+	width:70%;
+}
+.left-nav .info-item .skill-p .ps-bar{
+	width:55%;
+}
+.left-nav .info-item .skill-p .vue-bar{
+	width:45%;
+}
+.left-nav .info-item .skill-p .wp-bar{
+	width:50%;
+}
+.left-nav .info-item .skill-p .node-bar{
+	width:40%;
+}
 
 
 /*头部*/
@@ -185,8 +224,12 @@ header{
 	float:left;
 	width:67%;
 	padding-left:1.5em;
-	height:6em;
-	box-shadow: 0 2px 5px #ccc;
+	height:7em;
+	/* border-bottom:solid 2px #eee; */
+	/* box-shadow: 0 2px 5px #ccc; */
+	background:url(../img/bg.png) no-repeat;
+	background-size:contain;
+	background-position:center;
 }
 header p{
 	margin:0;
@@ -196,7 +239,10 @@ header p.name{
 	font-weight:700;
 	color:#447FA7;
 	margin-top:1.2em;
-	margin-bottom:0.1em
+	margin-bottom:0.1em;
+}
+header p.target{
+	color:#447FA7;
 }
 
 /*正文*/
@@ -204,11 +250,11 @@ section{
 	float:left;
 	width:67%;
 	padding:1.5em;
-	margin-top:1em;
-	border-top:solid 2px #eee;
+	/* margin-top:1em; */
+	/* border-top:solid 2px #eee; */
 }
 section .item{
-	margin-bottom:3em;
+	margin-bottom:2.3em;
 }
 section .item:last-child{
 	margin-bottom:0;
@@ -221,7 +267,7 @@ section .title-tips .tips span:after{
 	border-color:#447FA7;
 }
 section .info-box{
-	margin-bottom:2em;
+	margin-bottom:1.5em;
 }
 section .info-box:last-child{
 	margin-bottom:0;
@@ -233,7 +279,7 @@ section .info-box p{
 section .info-box .title{
 	display: flex;
 	justify-content: space-between;
-	margin-bottom:0.5em;
+	margin-bottom:0.3em;
 }
 section .info-box .date,
 section .info-box .location,
